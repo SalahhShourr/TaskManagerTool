@@ -1,38 +1,82 @@
-.App {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-decoration: none;
+}
+
+.sidebar {
+  display: flex;
+  width: 250px;
+  min-height: 100vh;
+  border-right: 2px solid rgb(177, 177, 177);
+  flex-direction: column;
+  gap: 48px;
+}
+
+.sidebar h2 {
+  margin: 30px 0px 20px 10px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.addTaskSection input{
+  padding: 10px 400px 10px 10px;
+  margin-left: 40px;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.addTaskSection a{
+  background-color: rgb(97, 97, 255);
+  border: 2px solid rgb(97, 97, 255);
   color: white;
+  margin: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.addTaskSection a:hover{
+  background-color: white;
+  color: rgb(97, 97, 255);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a{
+  color: black;
+  margin-left: 30px;
+  padding: 20px 120px 20px 20px;
+  border-radius: 10px;
+}
+
+.app{
+  display: flex;
+}
+
+h1{
+  margin: 30px 0 30px 50px;
+}
+
+table{
+  border-collapse: collapse;
+  margin: 20px 0px 20px 50px;
+}
+
+th{
+  background-color: rgb(242, 242, 242);
+}
+
+th, td{
+  padding: 20px 30px;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+.selected{
+  background-color: rgb(221, 239, 255);
+  color: blue;
+}
+
+.addTaskSection{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 50px;
 }
